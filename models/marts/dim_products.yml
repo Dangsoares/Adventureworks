@@ -1,0 +1,31 @@
+version: 2
+
+models:
+  - name: dim_products
+    columns:
+      - name: product_sk
+        description: The primary key of the products generated with row_number
+        tests:
+          - unique
+          - not_null  
+
+      - name: product_id
+        description: Unique product identifier code.
+        tests:
+          - unique
+          - not_null
+
+      - name: productname
+        description: Name of product.
+
+      - name: color
+        description: Color of product.
+
+      - name: size
+        description: Size of product.
+
+      - name: weight
+        description: Weight of product.
+
+      - name: class
+        description: Category to which the product belongs.

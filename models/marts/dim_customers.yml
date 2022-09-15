@@ -1,0 +1,29 @@
+version: 2
+
+models:
+  - name: dim_customers
+    columns:
+      - name: customer_sk
+        description: The primary key of the customers generated with row_number
+        tests:
+          - unique
+          - not_null 
+
+      - name: customerid
+        description: Unique identifier of the customer.
+        tests:
+
+      - name: personid
+        description: Unique identifier of the person.
+
+      - name: storeid
+        description: Unique store identifier.
+
+      - name: firstname
+        description: Customer's first name.
+
+      - name: middlename
+        description: Customer's middle name.
+
+      - name: lastname
+        description: Customer's last name.

@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: dim_dates
+    columns:
+      - name: orderdate
+        description: The primary key of the salesreasons generated with row_number
+        tests:
+          - unique
+          - not_null   

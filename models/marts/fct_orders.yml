@@ -1,0 +1,49 @@
+version: 2
+
+models:
+  - name: fct_orders
+    columns:
+      - name: salesorderid
+        description: The primary key of the addresses generated with row_number.
+        tests:
+          - unique
+          - not_null
+
+      - name: customer_fk
+        description: Associated foreign key with customerid.
+        
+      - name: creditcard_fk
+        description: Associated foreign key with creditcardid.
+
+      - name: address_fk
+        description: Associated foreign key with addressid.
+
+      - name: orderdate
+        description: Date of occurency.
+
+      - name: statusorder
+        description: Status of order.
+
+      - name: product_fk
+        description: Associated foreign key with product_id.
+
+      - name: orderqty
+        description: Quantity of items purchase.
+
+      - name: specialofferid
+        description: Special offer identifier.
+
+      - name: unitprice
+        description: Unit price of product.
+
+      - name: unitpricediscount
+        description: discount assigned to purchase.
+
+      - name: salesreason_fk
+        description: Associated foreign key with salesreasonid.
+
+      - name: freight
+        description: Shipping cost on the purchased product.
+      
+      - name: taxamt
+        description: Fee on the purchased product.

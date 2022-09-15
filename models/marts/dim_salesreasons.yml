@@ -1,0 +1,19 @@
+version: 2
+
+models:
+  - name: dim_salesreasons
+    columns:
+      - name: salesreason_sk
+        description: The primary key of the salesreasons generated with row_number
+        tests:
+          - unique
+          - not_null
+
+      - name: salesreasonid
+        description: Unique identifier of the reason for purchase.
+
+      - name: reasonname
+        description: Name of reason for purchase.
+        
+      - name: reasontype
+        description: Type of reason for purchase, which can be marketing, promotion and others.

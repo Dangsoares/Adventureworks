@@ -1,0 +1,30 @@
+version: 2
+
+sources:
+  - name: Raw
+    schema: Adventureworks
+    description: This is a replica of the Postgres database used by our app
+    tables:
+      - name: sales_salesorderheader
+        description: General sales order information
+      - name: person_address
+        description: Street address information for customers, employees, and vendors
+      - name: person_countryregion
+        description: Lookup table containing the ISO standard codes for countries and regions
+      - name: person_person
+        description: Describe employees, customer contacts and vendor contacts
+      - name: person_stateprovince
+        description: State and province lookup table
+      - name: production_product
+        description: Products sold or used in the manfacturing of sold products
+      - name: sales_creditcard
+        description: Customer credit card information
+      - name: sales_customer
+        description: Current customer information
+      - name: sales_salesorderdetail
+        description: Individual products associated with a specific sales order
+      - name: sales_salesorderheadersalesreason
+        description: Cross-reference table mapping sales orders to sales reason codes
+      - name: sales_salesreason
+        description: Lookup table of customer purchase reasons
+      

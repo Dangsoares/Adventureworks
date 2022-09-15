@@ -1,0 +1,25 @@
+version: 2
+
+models:
+  - name: dim_territories
+    columns:
+      - name: address_sk
+        description: The primary key of the addresses generated with row_number
+        tests:
+          - unique
+          - not_null
+
+      - name: addressid
+        description: Unique identifier of the customer's address.
+
+      - name: stateid
+        description: Unique identifier of the customer's state.
+
+      - name: city
+        description: Name of city.
+      
+      - name: countryname
+        description: Name of country.
+
+      - name: statename
+        description: Name of state.
