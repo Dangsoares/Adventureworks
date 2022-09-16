@@ -28,7 +28,7 @@ models:
         description: Associated foreign key with product_id.
 
       - name: orderqty
-        description: Quantity of items purchase.
+        description: Quantity of items.
 
       - name: specialofferid
         description: Special offer identifier.
